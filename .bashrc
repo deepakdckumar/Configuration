@@ -1,0 +1,13 @@
+alias javac="javac -d .";
+alias cd..="cd ..";
+alias v="vim ";
+alias py="python3";
+alias lp="cd ~/Desktop/Programming";
+alias cpp="cd ~/Desktop/Coding-Problems";
+PS1="\[$(tput setaf 166)\]Deepak ";
+PS1+="\[$(tput setaf 34)\]\w ";
+PS1+="\[$(tput setaf 55)\]$ ";
+PS1+="\[$(tput sgr0)\]";
+export PS1;
+export JAVA_HOME=$(/usr/libexec/java_home);
+export EDITOR="vim";
