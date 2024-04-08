@@ -1,13 +1,19 @@
-alias javac="javac -d .";
-alias cd..="cd ..";
-alias v="vim ";
-alias py="python3";
-alias lp="cd ~/Desktop/Programming";
-alias cpp="cd ~/Desktop/Coding-Problems";
-PS1="\[$(tput setaf 166)\]Deepak ";
-PS1+="\[$(tput setaf 34)\]\w ";
-PS1+="\[$(tput setaf 55)\]$ ";
-PS1+="\[$(tput sgr0)\]";
-export PS1;
-export JAVA_HOME=$(/usr/libexec/java_home);
-export EDITOR="vim";
+export BASH_SILENCE_DEPRECATION_WARNING=1
+export PS1='\u@:\[\e[01;32m\]\w\[\e[0m\]\$ '
+
+
+alias clean='mvn clean install -DskipTests'
+alias cd..='cd ..'
+alias ls='ls -l'
+alias status='git status'
+alias checkout='git checkout'
+alias add='git add .'
+alias commit='git commit -m'
+alias push='git push'
+
+export EDITOR='vim'
+export CLICOLOR=1
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home
+export PATH=$PATH:$JAVA_HOME/bin
+export PATH=$PATH:/opt/homebrew/bin
+export PATH=$PATH:/Applications/PersonalUtils/apache-maven-3.8.8/bin
